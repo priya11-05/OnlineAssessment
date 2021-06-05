@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+body{
+	/*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/loginbg.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;*/
+	font-family: 'Arial',sans-serif;
+	background-color: #ffff;
+}
+.text{
+	text-align: center;
+	font-size: 30px;
+}
+/*#wrapper{
+	/*max-width:960px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 32px;
+}*/
+header{
+	/*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/4.jpg);*/
+	background-color: #008080;
+	height: 150px;
+	padding:4px;
+}
+header h1{
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+.main{
+	padding:3px 0px 3px 0px;
+	background-color: #808080;
+	color:#ffffff;
+	text-align: right;
+	line-height: 32px;
+}
+ul{
+	margin-top: 5px;
+}
+ul li{
+	display:inline;
+	padding: 0 10px 0 10px;
+	font-size: 18px;
+}
+ul li a{
+	text-decoration:none;
+	color: #fff;
+	padding:8px;
+	
+}
+ul li a:hover{
+	color: #000080;
+	background-color: #fff;
+	cursor: pointer;
+}
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 220px;
+  left: 10px;
+  background: #808080;
+  overflow-x: hidden;
+  padding: 8px 0;
+  height: 200px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #00ffff;
+}

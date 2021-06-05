@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student registration Form </title>
+<link rel="stylesheet" type="text/css" href="../css/styleRegistrationForm.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<div class="home">
+		<a href="../login.html" class="hm">Home</a>
+	</div>
+	<div class="regform">
+		<h1>Student Registration Form</h1>
+	</div>  
+	<div class="main">
+		<form method="post" action="../RegisterServletURL">
+			<div id="name">
+				<h2 class="name">Name</h2>
+				<input class="firstname" type="text" name="first_name" pattern="^[A-Za-z]+$" required><br>
+				<label class="firstlabel">First Name</label>
+				<input class="middlename" type="text" name="middle_name" pattern="^[A-Za-z]+$"><br>
+				<label class="middlelabel">Middle Name</label>
+				<input class="lastname" type="text" name="last_name" pattern="^[A-Za-z]+$" required><br>
+				<label class="lastlabel">Last Name</label>
+			</div> 
+			
+			<h2 class="name">Roll Number</h2> 
+			<input class="roll" type="text" name="roll_no" required>
+			
+			<h2 class="name">Mobile Number</h2>
+			<input class="code" type="tel" name="area_code" value="+91">
+			<label class="area-code">Area Code</label>
+			<input class="number" type="tel" name="mobile" maxlength="10" pattern="[0-9]{10}">
+			<label class="mobile-number">Mobile Number</label>
+			
+			<h2 class="name">Email ID</h2>
+			<input class="email" type="text" name="email" required>
+			
+			
+			<h2 class="name">Password</h2>
+			<input class="password" type="password" name="password" id="myInput" required>
+			<span class="eye" onclick="myfunction()">
+				<i id="eye1" class="fa fa-eye"></i>
+				<i id="eye2" class="fa fa-eye-slash"></i>
+			</span>
+
+			
+			<button type="submit">Register Now</button>
+			
+		</form>
+	</div>
+	<script src="../js/scriptRegistrationForm.js"></script>
+</body>
+</html>
