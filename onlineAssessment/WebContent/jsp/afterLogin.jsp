@@ -1,47 +1,44 @@
-<!--<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-   
+<!--<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>This is the result page of registration</title>
-<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/css/styleViewRegId.css">
-
+<meta charset="ISO-8859-1">
+<title>Student After Login Home Page</title>
+<link rel="stylesheet" type="text/css" href="../css/styleStudentAfterLogin.css">
 </head>
 <body>
+<!-- <div id="wrapper"> -->
+<!--  <header><h1> Student after login page</h1></header>
+	<ul class="main">
+		<li class="reg">Registration no.:- <%%></li>
+		<li><a herf="#">Logout</a></li>
+	</ul>
+<div class="sidenav">
+  <a href="#text1" onclick="myfunction()">Profile</a>
+  <a href="#text2">Take Test</a>
+  <a href="#text3">Past Attempts</a>
+</div>
+<!-- </div> -->
+<!--  <h2 id="text1" class="text1">Prifile</h2>
+<h2 id="text2" class="text2">take test</h2>
+<h2 id="text3" class="text3">past attenmts</h2>
+<script>
+		function myfunction()
+		{
+			var x = document.setElementById("text1");
+			var y = document.setElementById("text2");
+			var z = document.setElementById("text3");
+			
+				x.type="text";
+				y.style.display="none";
+				z.style.display="none";
+		}	
+	</script>
 
-    <div class="showmsg">
-  <p><%= request.getAttribute("message") %></p>
-</div>
-
-<% String m=String.valueOf(request.getAttribute("message2")); %>
-
-<% if(m.compareTo("")!=0){ %>
-<div class="box">
-<a class="button" href="#popup1">View Registration ID</a>
-</div>
-
-<div id="popup1" class="overlay">
-<div class="popup">
-<h2>YOUR REGISTRATION ID IS</h2>
-<a class="close" href="#">&times;</a>
-<div class="content">
-<h2><%= request.getAttribute("message2") %></h2>
-</div>
-</div>
-</div>
-<% } %>
 
 </body>
 </html>-->
-
-
-
-
-
-
-
 
 <%@page import="oaBeans.user"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

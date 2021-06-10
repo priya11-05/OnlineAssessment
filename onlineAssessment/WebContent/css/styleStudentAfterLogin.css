@@ -7,9 +7,19 @@ body{
 	font-family: 'Arial',sans-serif;
 	background-color: #ffff;
 }
-.text{
+.text1{
 	text-align: center;
 	font-size: 30px;
+}
+.text2{
+	text-align: center;
+	font-size: 30px;
+	display: none;
+}
+.text3{
+	text-align: center;
+	font-size: 30px;
+	display:none;
 }
 /*#wrapper{
 	/*max-width:960px;
@@ -42,6 +52,9 @@ ul li{
 	display:inline;
 	padding: 0 10px 0 10px;
 	font-size: 18px;
+}
+.reg{
+	float: left;
 }
 ul li a{
 	text-decoration:none;

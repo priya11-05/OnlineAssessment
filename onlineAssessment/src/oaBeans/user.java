@@ -1,9 +1,10 @@
 package oaBeans;
 
+
 @SuppressWarnings("serial")
 public class user implements java.io.Serializable
 {
-private int roll;
+private String roll;
 private String regid;
 private String userType;
 private String fname;
@@ -14,15 +15,16 @@ private String phnNum;
 private String pwd;
 private String mailId;
 
+
 public user()
 {
 }
 //roll
-public void setRoll(int roll)
+public void setRoll(String roll)
 {
 this.roll=roll;
 }
-public int getRoll()
+public String getRoll()
 {
 return roll;
 }

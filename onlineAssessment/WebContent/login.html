@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ONLINE ASSESMENT</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+<title>Online Assessment</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
 <header>
-<div class="title">
-<h1>ONLINE ASSESMENT</h1>
-</div>
-<div class="main">
-<ul>
-<li><a href="html/RegistrationForm.html">Register Now</a></li>
-</ul>
+<p>Online Assessment</p>
+</header>
+
+
+<div class="form-box">
+<form name="loginform" method="post" action="loginServletURL">
+<h1>Login </h1>
+<div class="select-box">
+<label for="user">User:</label>
+<select name="usertype" id="user" required>
+<option value="Student">Student</option>
+<option value="Teacher">Teacher</option>
+<option value="Admin">Admin</option>
+</select>
 </div>
 
-<div class="fillup">
-<form name="loginform" action="loginServletURL" method="post">
-<table>
-<tr>
-<td>USER:</td>
-<td><select name="usertype"><option value="Student">Student</option>  
-<option value="Teacher">Teacher</option>  
-<option value="Admin">Admin</option>  
-</select>
-</td>
-</tr>
-<tr>
-<td>REGISTRATION ID:</td>
-<td><input type="text" name="regID"></td>
-</tr>
-<tr>
-<td>Password:</td>
-<td><input type="password" name="userpwd"/></td>
-</tr>
-<tr><td><br></td></tr>
-<tr><td></td><td></td><td><input type="submit" value="Login" class="loginbtn" /></td></tr>
-</table>
-</form>  
+<div class="input-box">
+<i class="fa fa-id-badge"></i>
+<input type="text" name="regID" placeholder="Registration id" required>
 </div>
-</header>
+
+<div class="input-box">
+<i class="fa fa-key"></i>
+<input type="password" placeholder="password" name="userpwd" id="myInput" required>
+<span class="eye" onclick="myfunction()">
+<i id="eye1" class="fa fa-eye"></i>
+<i id="eye2" class="fa fa-eye-slash"></i>
+</span>
+</div>
+
+<button type="submit" class="btn1">Login</button>
+</form>
+
+
+<form action="html/RegistrationForm.html">
+<div class="register">
+<p class="yet">Or,Yet not Registered</p><br>
+<button type="submit" class="btn2">Register Now</button>
+</div>
+</form>
+</div>
+
+
+<script>
+function myfunction()
+{
+var x = document.getElementById("myInput");
+var y = document.getElementById("eye1");
+var z = document.getElementById("eye2");
+
+if(x.type ==='password')
+{
+x.type="text";
+y.style.display="block";
+z.style.display="none";
+}
+else{
+x.type="password";
+y.style.display="none";
+z.style.display="block";
+}
+}
+</script>
+
+
+<footer>
+<div class="contact">
+<p>For Queries and Suggestions: Contact Us</p>
+</div>
+</footer>
 </body>
 </html>

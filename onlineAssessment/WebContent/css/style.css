@@ -1,90 +1,115 @@
 *{
 margin: 0;
 padding: 0;
-font-family: Century Gothic;
-color: red;
-font-size: 35px;
 }
 header{
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+footer {
+	margin-top:100px;
+  text-align: center;
+  padding: 30px;
+  background-color: #000000;
+  color: white;
+}
 
-background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/loginbg.jpg);
-height: 100vh;
+body{
+background-image:url(../images/pexels-photo-3184460.jpeg);
 background-size: cover;
 background-position: center;
-}
-.title{
-position: absolute;
-top: 20%;
-left: 45%;
-transform: translate(-50%,-50%);
-}
-.title h1{
-color: red;
-font-size: 60px;
-font-family: cursive;
-}
-.main{
-max-width: 1200px;
-margin: auto;
-font-size: 5px;
+font-family: sans-serif;
 }
 
-ul{
-float: right;
-list-style-type: none;
-margin-top: 25px;
+.form-box{
+	width:500px;
+	background:transparent;
+	margin-left: 900px;
+	margin-top:100px;
+	padding:50px 0;
+	color:#000;
+	box-shadow: none;
 }
-ul li{
-display: inline-block;
+h1{
+	text-align:center;
+	margin-bottom:40px;
 }
-ul li a{
-text-decoration: none;
-padding: 5px 20px;
-border: 1px solid transparent;
-transition: 0.6s ease;
+#user{
+	margin:15px auto;
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: -10px;
 }
-ul li a:hover{
-border: 1px red;
-border-radius: 12px;
-background-color: #fff;
-color: #000;
+#user input{
+	width: 90%;
+	border:none;
+	outline:none;
+	background:transparent;
+	color: #000;
 }
-div.fillup{
-position: absolute;
-top: 230px;
-right: 260px;
+.select-box{
+	margin: 31px auto;
+	width: 80%;
+	padding-top: 10px;
+}
+.input-box{
+	margin: 31px auto;
+	width: 80%;
+	border-bottom: 1px solid #000;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
 
+.input-box input{
+	width: 90%;
+	border:none;
+	outline:none;
+	background:transparent;
+	color: #000;
 }
-table, th, td {
-  border: 0;
-  padding: 5px;
-  align: centre;
-  font-size:30px;
+
+::placeholder{
+	color:#555;
 }
-input[type=text], input[type=password] {
-  font-size: 20px;
-  width: 100%;
-  padding: 5px 5px;
-  display: inline-block;
-  box-sizing: border-box;
- 
+.fa{
+	margin-right:10px;
 }
-.loginbtn {
-  background-color: green;
-  color: white;
-  padding: 5px 5px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 140%;
-  border-radius: 9px;
-  transition: 0.6s ease;
- 
+.eye{
+	position:absolute;
 }
-input[type=submit]:hover {
-  opacity: 0.5;
-  border: 1px red;
-border-radius: 12px;
-background-color: green;
-color: white;
+#eye1{
+	display:none;
+}
+.btn1{
+	margin: 40px auto 20px;
+	width:80%;
+	display:block;
+	outline: none;
+	padding: 10px 0;
+	border: 1px solid #000;
+	cursor: pointer;
+	background:transparent;
+	color: #000;
+	font-size: 16px;
+	text-decoration:none;
+}
+.btn2{
+	margin-top: 15px;
+	margin-left:50px;
+	width:80%;
+	display:block;
+	outline: none;
+	padding: 10px 0;
+	border: 1px solid #000;
+	cursor: pointer;
+	background:transparent;
+	color: #0000ff;
+	font-size: 16px;
+	text-decoration:none;
+}
+
+.yet{
+	margin-left:200px;
 }

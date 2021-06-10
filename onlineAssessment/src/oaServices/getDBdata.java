@@ -1,4 +1,4 @@
-package oaServices;
+/*package oaServices;
 import oaBeans.user;
 
 import oaDao.afterLoginDAO;;
@@ -30,5 +30,38 @@ break;
 }
 }
 return name;
+}
+}*/
+
+
+
+
+
+
+package oaServices;
+import oaBeans.user;
+
+
+import oaDao.afterLoginDAO;;
+public class getDBdata
+{
+public int respCode=0;
+public user getUser(user loginUser)
+{
+//int respCode=0;
+afterLoginDAO obj=new afterLoginDAO();
+user searchRes=obj.getUserFromDB("regId",loginUser.getRegId())[0];
+
+if(searchRes.getRegId()!="null")
+{
+if((loginUser.getPass().equals(searchRes.getPass()))&&(loginUser.getUserType().equals(searchRes.getUserType())))
+{
+respCode=1;
+return searchRes;
+}
+}
+else
+respCode=2;
+return searchRes;
 }
 }
